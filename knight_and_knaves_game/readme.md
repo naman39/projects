@@ -8,7 +8,7 @@ In 1978, Raymond Smullyan introduced Knights and Knaves puzzles in his book "Wha
 
 ## Getting Started
 
-1. **Download the Distribution Code**: Clone or download the distribution code from https://github.com/naman39/projects/tree/main/knight_and_knaves_game 
+1. **Download the Distribution Code**: Clone or download the distribution code from ```git clone https://github.com/naman39/projects/tree/main/knight_and_knaves_game```
 
 2. **Understanding the Code**:
    - **logic.py**: Defines logical connectives (`And`, `Or`, `Not`, etc.) and includes a `model_check` function for checking entailment using model checking.
