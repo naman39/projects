@@ -1,21 +1,47 @@
-This is a AI Chatbot prototype.
+# AI Chatbot Prototype
 
-It is built using langflow. It is a basic flow of how things would work in a real chatbot. It uses ASTRA DB vector database, and uses OpenAI API, to power the chatbot and generate embeddings.
+Welcome to the AI Chatbot prototype repository! This prototype is built using **langflow**, integrating ASTRA DB vector database and utilizing the OpenAI API to power the chatbot and generate embeddings.
 
-To run it on your machine, run the following command on your machine in cmd or terminal this requires a Python 3.10, some later version of 3.12 might not support it. 
+## Getting Started
 
-Mac/ Linux:
-pip3 install langflow --pre --force-reinstall
+To run this prototype on your machine, follow these instructions:
 
-Windows:
-pip install langflow --pre --force-reinstall
+### Prerequisites
 
-After downloading the file and langflow platform, run this:
-langflow run
+- Python 3.10 is required. Note that some versions beyond 3.12 might not be compatible.
+- Ensure you have pip installed.
 
-Then a window might pop up that look like this:
-<img width="1663" alt="Screenshot 2024-06-16 at 2 57 30 PM" src="https://github.com/naman39/projects/assets/59209974/ba4447eb-507b-4dfa-b085-3c954d944b6d">
+### Installation
 
-Just drag and drop the json file there to see its structure click run to run it.
+Install **langflow** and its dependencies:
 
-Thankyou for checking out my chatbot.
+#### Mac/Linux:
+
+```pip3 install langflow --pre --force-reinstall```
+
+#### Windows:
+
+```pip install langflow --pre --force-reinstall```
+
+### Running the Chatbot
+
+1. After installing **langflow**, navigate to the project directory in your terminal or command prompt.
+   
+2. Execute the following command to start the chatbot:
+
+```langflow run```
+
+3. A GUI window might open up, resembling this: [Screenshot 2024-06-16 at 2 57 30 PM]. Drag and drop your JSON file to view its structure.
+
+4. Click on "Run" to execute the chatbot.
+
+## Additional Notes
+
+- **langflow** provides the underlying framework for this chatbot prototype, facilitating easy integration and development.
+- Ensure your Python environment is set up correctly with the required dependencies before running the chatbot.
+
+## Thank you!
+
+Thank you for exploring my chatbot prototype. Feel free to contribute, raise issues, or provide feedback. Happy chatting!
+
+---
