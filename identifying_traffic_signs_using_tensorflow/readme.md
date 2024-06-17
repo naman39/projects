@@ -9,8 +9,10 @@ This project uses TensorFlow to build a neural network that can classify images 
 ## Getting Started
 
 1. **Download the Distribution Code**: Clone or download the distribution code from  ```git clone https://github.com/naman39/projects/tree/main/identifying_traffic_signs_using_tensorflow```
+
+2. **Download the German Traffic Sign Recognition Benchmark (GTSRB) dataset:** ```https://cdn.cs50.net/ai/2020/x/projects/5/gtsrb.zip```
    
-2. **Install Dependencies**: Inside the `traffic` directory, run `pip3 install -r requirements.txt` to install necessary dependencies (`opencv-python`, `scikit-learn`, `tensorflow`).
+3. **Install Dependencies**: Inside the `traffic` directory, run `pip3 install -r requirements.txt` to install necessary dependencies (`opencv-python`, `scikit-learn`, `tensorflow`).
 
 ## Understanding the Project
 
@@ -21,8 +23,8 @@ This project uses TensorFlow to build a neural network that can classify images 
   - **`README.md`**: Documenting experimentation process and insights gained during the project.
   
 - **Specification**:
-  - Implement `load_data` in `traffic.py` to load and preprocess images from the dataset.
-  - Implement `get_model` in `traffic.py` to create and compile a neural network model for traffic sign classification.
+  - Implement `load_data` in `tensoriffic.py` to load and preprocess images from the dataset.
+  - Implement `get_model` in `tensoriffic.py` to create and compile a neural network model for traffic sign classification.
 
 ## Experimentation Process
 
@@ -46,7 +48,7 @@ Throughout this project, I experimented with various configurations and techniqu
 ## Usage
 
 To run the traffic sign classification:
-```python traffic.py [data_directory] [optional: model_filename.h5]```
+```python tensoriffic.py [data_directory] [optional: model_filename.h5]```
 - `data_directory`: Path to the directory containing the `gtsrb` dataset.
 - `model_filename.h5` (optional): Filename to save the trained model.
 
