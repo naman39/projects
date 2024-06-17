@@ -15,7 +15,7 @@ This project implements a Tic-Tac-Toe game where you can play against an AI that
 
 1. Clone this repository:
 ```git clone https://github.com/naman39/projects/tree/main/tictactoe```
-Change the directory to the repo directory
+2. Change the directory to the repo directory
 ```cd <repository-directory>```
 3. Install dependencies:
 ``` pip install -r requirements.txt```
