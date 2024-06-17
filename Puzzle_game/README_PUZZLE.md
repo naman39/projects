@@ -20,6 +20,7 @@ This project implements a crossword puzzle generator that uses Constraint Satisf
 4. To generate a crossword puzzle, run:
 ```python generate.py data/structure1.txt data/words1.txt output.png```
 Replace data/structure1.txt and data/words1.txt with your own structure and word files as needed.
+
 **FOR EXPERIMENTATION I HAVE INCLUDED THREE DIFFERENT SAMPLES OF EACH**
 
 ## How It Works
