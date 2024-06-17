@@ -6,8 +6,8 @@ This project implements a crossword puzzle generator that uses Constraint Satisf
 * **crossword.py:** Contains the definition of the Crossword and Variable classes, which represent the structure and variables of the crossword puzzle.
 * **generate.py:** Includes functions to enforce constraints and solve the crossword puzzle using CSP techniques.
 * data/:
-    * * **structure1.txt:** Example structure file defining the layout of a crossword puzzle.
-    * * **words1.txt:** Example file containing a list of words that can be used to fill in the crossword puzzle.
+    *  **structure1.txt:** Example structure file defining the layout of a crossword puzzle.
+    *  **words1.txt:** Example file containing a list of words that can be used to fill in the crossword puzzle.
 * **requirements.txt:** Lists the Python dependencies required for this project.
 
 ## Getting Started
