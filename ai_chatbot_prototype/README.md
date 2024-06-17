@@ -10,6 +10,11 @@ To run this prototype on your machine, follow these instructions:
 
 - Python 3.10 is required. Note that some versions beyond 3.12 might not be compatible.
 - Ensure you have pip installed.
+- You will find the api keys and endpoint in AstraDB missing: use the following and run the application:
+- **OPEN_AI_API:** sk-proj-oLlx7MEPC0JjZbHdwl8MT3BlbkFJm0UZVjAo6v8cB5wmBbDY
+- **ASTRA-TOKEN:** AstraCS:ELXAmQGxpdqNPzFlwCZOKtrP:a0ee4e5eb0637762c2021fc376df11cbbb4b6003fcf5a847b50b029c1693e81a
+- **ASTRA-ENDPOINT:** https://9b5ddf64-0fdf-4a56-83d2-7b10d29ca544-us-east1.apps.astra.datastax.com
+- **ASTRA-COLLECTION:** pdf
 
 ### Installation
 
