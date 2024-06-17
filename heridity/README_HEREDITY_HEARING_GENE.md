@@ -22,6 +22,7 @@ To begin using the project:
 3. **Understand the Data:** Explore the sample datasets located in the data directory. Each CSV file (e.g., family0.csv) contains information about individuals, their parents, and whether they exhibit the trait.
 4. **Explore heredity.py:** Run the file and see the probabilities of them containing the gene.
    ```python heredity.py family2.csv```
+   
 **YOU CAN CHANGE THE FAMILY NUMBER DEPENDING ON THE FAMILY YOU WANT THE PROBABILITES FOR**
 
 ## Specification
