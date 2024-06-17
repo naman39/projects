@@ -1,4 +1,4 @@
-# GJB2 Gene and Hearing Impairment
+# GJB2 Gene Probability Calculator
 
 This project focuses on modeling the genetic inheritance of the GJB2 gene, which is associated with hearing impairment. It employs Bayesian networks to infer the likelihood that an individual carries certain genetic traits based on familial data and observable traits.
 
