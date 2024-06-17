@@ -12,7 +12,7 @@ This project implements a crossword puzzle generator that uses Constraint Satisf
 
 ## Getting Started
 1. Clone this repository:
-```git clone <repository-url>```
+```git clone https://github.com/naman39/projects/tree/main/Puzzle_game```
 2. Change the directory
 ```cd <repository-directory>```
 3. Install dependencies:
