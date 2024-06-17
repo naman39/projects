@@ -6,12 +6,14 @@ The concept is inspired by the Six Degrees of Kevin Bacon game, where actors are
 
 ## Getting Started
 1. **Download the Distribution Code:** Clone or download the distribution code from here and unzip it.
-
-2. **Understanding the Data:** Explore the CSV files provided:
+```git clone https://github.com/naman39/projects/tree/main/Six_degrees_of_kevin_bacon_game```
+2. **Change the directory:** cd <repository-directory>
+3. **Understanding the Data:** Explore the CSV files provided:
   * people.csv: Contains IDs, names, and birth years of people (actors).
   * movies.csv: Includes IDs, titles, and release years of movies.
   * stars.csv: Establishes relationships between people and movies they starred in.
-3. **Exploring degrees.py:** This file manages the loading of data into dictionaries (names, people, movies) and implements the main logic to find the shortest path between two actors using the breadth-first search algorithm.
+4. **Exploring degrees.py:** This file manages the loading of data into dictionaries (names, people, movies) and implements the main logic to find the shortest path between two actors using the breadth-first search algorithm.
+5. **Test**: ```python degrees.py small```
 
 ## Implementation Details
 * **Shortest Path Calculation:** The core of the project is the shortest_path function in degrees.py. This function computes the shortest path between two actors using breadth-first search (BFS), treating actors as nodes and movies as edges connecting them.
