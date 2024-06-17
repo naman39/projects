@@ -41,6 +41,8 @@ Install **langflow** and its dependencies:
 - **langflow** provides the underlying framework for this chatbot prototype, facilitating easy integration and development.
 - Ensure your Python environment is set up correctly with the required dependencies before running the chatbot.
 
+<img width="813" alt="Screenshot 2024-06-17 at 5 23 58 AM" src="https://github.com/naman39/projects/assets/59209974/e4352ccc-0cb1-4c24-a0ff-1ba6f98eba35">
+
 ## Thank you!
 
 Thank you for exploring my chatbot prototype. Feel free to contribute, raise issues, or provide feedback. Happy chatting!
