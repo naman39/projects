@@ -31,7 +31,8 @@ Install **langflow** and its dependencies:
 
 ```langflow run```
 
-3. A GUI window might open up, resembling this: [Screenshot 2024-06-16 at 2 57 30 PM]. Drag and drop your JSON file to view its structure.
+3. A GUI window might open up, resembling this: ![Screenshot 2024-06-17 at 5 13 46 AM](https://github.com/naman39/projects/assets/59209974/d18de078-6296-4d44-9a21-dddf1b658c07)
+ Drag and drop your JSON file to view its structure.
 
 4. Click on "Run" to execute the chatbot.
 
