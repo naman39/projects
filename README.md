@@ -14,7 +14,7 @@ This repository contains all my past work with Machine Learning and Artificial I
 
 [6. Knights and Knaves Game](knight_and_knaves_game)
 
-[7. Minesweeper Game](minesweeper)
+[7. Minesweeper Game](minesweeper%20game)
 
 [8. TIC-TAC-TOE GAME](tictactoe)
 
