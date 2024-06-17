@@ -15,10 +15,11 @@ This project implements a Tic-Tac-Toe game where you can play against an AI that
 
 1. Clone this repository:
 ```git clone <repository-url>```
+Change the directory to the repo directory
 ```cd <repository-directory>```
-2. Install dependencies:
+3. Install dependencies:
 ``` pip install -r requirements.txt```
-3. Run the game:
+4. Run the game:
 ```python runner.py```
 
 ## Gameplay Instructions
