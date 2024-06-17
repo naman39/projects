@@ -14,7 +14,7 @@ This project implements a Tic-Tac-Toe game where you can play against an AI that
 ** USE PYTHON3 AND PIP3 WHILE USING ON MACOS OR LINUX **
 
 1. Clone this repository:
-```git clone <repository-url>```
+```git clone https://github.com/naman39/projects/tree/main/tictactoe```
 Change the directory to the repo directory
 ```cd <repository-directory>```
 3. Install dependencies:
