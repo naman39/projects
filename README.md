@@ -8,7 +8,7 @@ This repository contains all my past work with Machine Learning and Artificial I
 
 [3. AI Langflow Chatbot](ai_chatbot_prototype)
 
-[4. GJB2 Gene Probability Calculator](heredity)
+[4. GJB2 Gene Probability Calculator](heridity)
 
 [5. Traffic Sign Classification with TensorFlow](identifying_traffic_signs_using_tensorflow)
 
