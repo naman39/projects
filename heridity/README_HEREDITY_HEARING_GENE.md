@@ -16,7 +16,7 @@ The project uses a Bayesian network to model the relationships between genetic t
 To begin using the project:
 
 1. **Download the Distribution Code:** Clone or download the distribution code from here and unzip it.
-   ```git clone <repository-url>```
+   ```git clone https://github.com/naman39/projects/tree/main/heridity```
 2. **Change the directory:** Change the directory to where the file is cloned.
   ```cd <repository-directory>```
 3. **Understand the Data:** Explore the sample datasets located in the data directory. Each CSV file (e.g., family0.csv) contains information about individuals, their parents, and whether they exhibit the trait.
@@ -32,4 +32,6 @@ This project requires implementing three core functions in **heredity.py:**
 * **normalize:** Normalizes the probability distributions to ensure they sum to 1 after updates.
   
 These functions use predefined probabilities (PROBS) for gene inheritance, trait expression, and mutation probabilities. Detailed specifications and examples are provided in the heredity.py file to guide implementation.
+
+
 ![Screenshot 2024-06-16 at 7 53 07 PM](https://github.com/naman39/projects/assets/59209974/73d95316-5e6e-4888-905e-d3a2a768fd08)
