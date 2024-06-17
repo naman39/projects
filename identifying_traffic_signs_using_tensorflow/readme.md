@@ -55,3 +55,5 @@ To run the traffic sign classification:
 ## Conclusion
 
 Through this project, I gained valuable experience in building and optimizing neural networks for image classification tasks using TensorFlow. Experimentation with different architectures and techniques provided insights into the challenges and considerations involved in developing robust computer vision applications for real-world scenarios.
+
+![Screenshot 2024-06-17 at 5 08 14 AM](https://github.com/naman39/projects/assets/59209974/af462ca0-4120-4710-ba3b-562f8f5291c5)
