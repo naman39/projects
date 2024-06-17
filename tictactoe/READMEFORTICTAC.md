@@ -11,7 +11,7 @@ This project implements a Tic-Tac-Toe game where you can play against an AI that
 * **requirements.txt:** Lists the Python dependencies required for this project.
 
 ## Getting Started
-** USE PYTHON3 AND PIP3 WHILE USING ON MACOS OR LINUX **
+**USE PYTHON3 AND PIP3 WHILE USING ON MACOS OR LINUX**
 
 1. Clone this repository:
 ```git clone https://github.com/naman39/projects/tree/main/tictactoe```
