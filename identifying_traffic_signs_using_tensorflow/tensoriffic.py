@@ -17,7 +17,7 @@ def main():
 
     # Check command-line arguments
     if len(sys.argv) not in [2, 3]:
-        sys.exit("Usage: python traffic.py data_directory [model.h5]")
+        sys.exit("Usage: python tensoriffic.py data_directory [model.h5]")
 
     # Get image arrays and labels for all image files
     images, labels = load_data(sys.argv[1])
@@ -27,8 +27,6 @@ def main():
     x_train, x_test, y_train, y_test = train_test_split(
         np.array(images), np.array(labels), test_size=TEST_SIZE
     )
-
-    x_train, x_test = x_train / 255.0, x_test / 255.0
 
     # Get a compiled neural network
     model = get_model()
@@ -61,20 +59,39 @@ def load_data(data_dir):
     corresponding `images`.
     """
 
+    print(f'Loading images from dataset in directory "{data_dir}"')
+
     images = []
     labels = []
 
-    # iterate through data set directories
-    for directory in os.listdir(data_dir):
-        # iterate through single image files
-        print(f"Started loading files from {directory} directory")
-        for file in os.listdir(os.path.join(data_dir, directory)):
-            image = cv2.imread(os.path.join(data_dir, directory, file))
-            resized = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
-            images.append(resized)
-            labels.append(int(directory))
-        print(f"Ended loading files from {directory} directory")
-    return images, labels
+    # Iterate through sign folders in directory:
+    for foldername in os.listdir(data_dir):
+        # Error Checking Data Folder
+        try:
+            int(foldername)
+        except ValueError:
+            print("Warning! Non-integer folder name in data directory! Skipping...")
+            continue
+    # Iterate through images in each folder
+        for filename in os.listdir(os.path.join(data_dir, foldername)):
+            # Open each image and resize to be IMG_WIDTH X IMG HEIGHT
+            img = cv2.imread(os.path.join(data_dir, foldername, filename))
+            img = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT))
+
+            # Normalise image pixel intensities:
+            img=img/255
+
+            # Append Resized Image and its label to lists
+            images.append(img)
+            labels.append(int(foldername))
+
+    # Check number of Images Matches Number of Labels:
+    if len(images) != len(labels):
+        sys.exit('Error when loading data, number of images did not match number of labels!')
+    else:
+        print(f'{len(images)}, {len(labels)} labelled images loaded successfully from dataset!')
+
+    return (images, labels)
 
 
 def get_model():
@@ -83,41 +100,33 @@ def get_model():
     `input_shape` of the first layer is `(IMG_WIDTH, IMG_HEIGHT, 3)`.
     The output layer should have `NUM_CATEGORIES` units, one for each category.
     """
+
+    # Create the Neural Network Model using keras:
     model = tf.keras.models.Sequential([
-        # Convolutional layer. Learn 32 filters using a 3x3 kernel
-        tf.keras.layers.Conv2D(
-            32, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
-        ),
 
-        # Max-pooling layer, using 2x2 pool size
-        tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+    # Add 2 sequential 64 filter, 3x3 Convolutional Layers Followed by 2x2 Pooling
+    tf.keras.layers.Conv2D(64, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)),
+    tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+    tf.keras.layers.Conv2D(64, (3, 3), activation="relu"),
+    tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
 
-        tf.keras.layers.Conv2D(
-            32, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
-        ),
+    # Flatten layers
+    tf.keras.layers.Flatten(),
 
-        # Max-pooling layer, using 2x2 pool size
-        tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+    # Add A Dense Hidden layer with 512 units and 50% dropout
+    tf.keras.layers.Dense(512, activation="relu"),
+    tf.keras.layers.Dropout(0.5),
 
-        # Flatten units
-        tf.keras.layers.Flatten(),
-
-        # Add a hidden layer with dropout
-        tf.keras.layers.Dense(128, activation="relu"),
-        tf.keras.layers.Dropout(0.5),
-
-        # Add an output layer with output units for all 10 digits
-        tf.keras.layers.Dense(NUM_CATEGORIES, activation="softmax")
+    # Add Dense Output layer with 43 output units
+    tf.keras.layers.Dense(NUM_CATEGORIES, activation="softmax")
     ])
 
-    model.compile(
-        optimizer="adam",
-        loss="categorical_crossentropy",
-        metrics=["accuracy"]
-    )
+    # Set additional model settings and compile:
+    model.compile(optimizer='adam',
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
 
-    model.summary()
-
+    # Return model for training and testing
     return model
 
 
