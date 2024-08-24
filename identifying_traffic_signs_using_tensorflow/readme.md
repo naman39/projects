@@ -3,7 +3,7 @@
 With the advancement of self-driving car technology, computer vision plays a crucial role in enabling vehicles to interpret and respond to their surroundings. A key aspect of this is the ability to accurately classify road signs from images, such as stop signs, speed limit signs, and yield signs.
 
 ## Background
-
+ 
 This project uses TensorFlow to build a neural network that can classify images of road signs based on their visual content. We'll utilize the German Traffic Sign Recognition Benchmark (GTSRB) dataset, which includes thousands of images categorized into 43 different types of road signs.
 
 ## Getting Started
