@@ -27,7 +27,7 @@ Replace data/structure1.txt and data/words1.txt with your own structure and word
 * The crossword puzzle is represented by a grid structure where some squares are blank and need to be filled with letters.
 * The generator uses CSP techniques to ensure that each word fits its corresponding variable based on length and overlaps with neighboring variables.
 * The program enforces node consistency to ensure that all words in a variable's domain have the correct length.
-* Arc consistency is enforced to ensure that there are no conflicts between neighboring variables.
+* Arc consistency is enforced to ensure that there are no conflicts between neighboring variables. 
 * Backtracking search is used to find a solution that satisfies all constraints and fills the crossword puzzle completely.
   
 ## Functions Implemented
